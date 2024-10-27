@@ -67,21 +67,6 @@ def MakeRank(self, request, context):
     bootstrap_elo_lu = get_bootstrap_result(battles, compute_mle_elo, BOOTSTRAP_ROUNDS)
     leaderboard = generate_bootstrap_scores_json(bootstrap_elo_lu, wins_per_model)
 
-    # # モデルのメタデータをリーダーボードに追加
-    # with open("models_metadata.json") as f:
-    #     model_details = json.load(f)
-
-    # meta_leaderboard = []
-    # for entry in leaderboard:
-    #     model_name = entry["model"]
-    #     model_info = model_details.get(model_name, {})
-
-    #     entry["url"] = model_info.get("url", "N/A")
-    #     entry["creator"] = model_info.get("creator", model_info.get("ceator", "N/A"))
-    #     entry["base_model"] = model_info.get("base_model", "N/A")
-    #     entry["registr"] = model_info.get("registr", "N/A")
-    #     meta_leaderboard.append(entry)
-
     # リーダーボードのメタデータを追加
     current_datetime = datetime.datetime.now()
     formatted_date = current_datetime.strftime("%Y-%m-%d %H:%M")

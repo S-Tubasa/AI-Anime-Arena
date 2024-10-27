@@ -46,7 +46,9 @@ def AddDetails(self, request, context):
         model_info = model_details.get(model_name, {})
 
         entry["url"] = model_info.get("url", "N/A")
-        entry["creator"] = model_info.get("creator", model_info.get("ceator", "N/A"))
+        entry["contribute"] = model_info.get(
+            "contribute", model_info.get("contribute", "N/A")
+        )
         entry["base_model"] = model_info.get("base_model", "N/A")
         entry["registr"] = model_info.get("registr", "N/A")
         meta_leaderboard.append(entry)
