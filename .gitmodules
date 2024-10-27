@@ -1,0 +1,9 @@
+[submodule "Architecture/Pony_Diffusion_V6_XL_Basic"]
+	path = Architecture/Pony_Diffusion_V6_XL_Basic
+	url = git@github.com:S-Tubasa/Pony_Diffusion_V6_XL_Basic.git
+[submodule "Architecture/Counterfeit_V_3_0_Basic"]
+	path = Architecture/Counterfeit_V_3_0_Basic
+	url = git@github.com:S-Tubasa/Counterfeit_V_3_0_Basic.git
+[submodule "Architecture/Animagine_XL_3_1_Basic"]
+	path = Architecture/Animagine_XL_3_1_Basic
+	url = git@github.com:S-Tubasa/Animagine_XL_3_1_Basic.git
