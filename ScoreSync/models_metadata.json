@@ -1,18 +1,18 @@
 {
     "Animagine_XL_3_1_Basic": {
-        "url": "https://github.com/",
+        "url": "https://github.com/S-Tubasa/Animagine_XL_3_1_Basic",
         "contributor": "S-Tubasa",
         "base_model": "Animagine XL 3.1(SD XL)",
         "registr": "2024-11-30"
     },
     "Counterfeit_V_3_0_Basic": {
-        "url": "https://github.com/",
+        "url": "https://github.com/S-Tubasa/Counterfeit_V_3_0_Basic/",
         "contribute": "S-Tubasa",
         "base_model": "Counterfeit-V3.0(SD 1.5)",
         "registr": "2024-11-30"
     },
     "Pony_Diffusion_V6_XL_Basic": {
-        "url": "https://github.com/",
+        "url": "https://github.com/S-Tubasa/Pony_Diffusion_V6_XL_Basic",
         "contribute": "S-Tubasa",
         "base_model": "Pony_Diffusion_v6(SD XL)",
         "registr": "2024-11-30"
