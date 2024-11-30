@@ -19,7 +19,7 @@ def serve(port=9300, log_to_console=False):
         logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s")
     else:
         logging.basicConfig(
-            filename="/log/scoresync/server.log",
+            filename="/log/scoresync.log",
             level=logging.INFO,
             format="%(asctime)s - %(message)s",
         )
