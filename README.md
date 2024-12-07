@@ -1,7 +1,7 @@
 <div align="center">
 <h1>Ai Anime Arena</h1>
 
-**English** | [日本語](../README_ja.md)
+**English** | [日本語](Docs/README_ja.md)
 
 [![Logo](Docs/ogp.png)](https://evaluate.sh)
 
@@ -13,7 +13,6 @@ AI-Anime-Arena is an anime art benchmark platform featuring anonymous and random
 > [!IMPORTANT]
 > Currently in beta; this project may be terminated without notice.
 
----
 
 ## Features
 - **Limited to Anime-Style Images**: We evaluate models used solely for anime-style artwork, not those designed to generate photorealistic or realistic images.
