@@ -40,7 +40,7 @@ AI-Anime-Arena is an anime art benchmark platform featuring anonymous and random
 - Setup instructions must be clearly stated.
   - For how to write, please refer to [this repository](https://github.com/S-Tubasa/Animagine_XL_3_1_Basic).
 - **Important**: Inference speed must be within around 20seconds on a graphics card equivalent to RTX 4090.
-  - Including loading time due to model size, it must be within around 20 seconds.
+  - Including loading time due to model size, it must be within 30 seconds.
 
 ## Data Usage
 - Currently under preparation
