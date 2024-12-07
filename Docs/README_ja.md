@@ -3,7 +3,7 @@
 
 [English](../README.md) | **日本語**
 
-[![Logo](ogp.png)](https://evaluate.sh)
+https://github.com/user-attachments/assets/318d79c2-3438-440f-aeb0-7ac8d2ec2f95
 
 <a href="https://evaluate.sh" rel="dofollow"><strong>Explore the Web »</strong></a>
 </div>
@@ -23,7 +23,7 @@ AI-Anime-Arena は、匿名でランダム化されたバトルを特徴とす�
 ## 生成モデル追加リクエスト
 - 下記の条件を満たした上でリポジトリを作成し、[issues](https://github.com/S-Tubasa/AI-Anime-Arena/issues)にてリクエストを行ってください。
   - 確認後自動的にこのリポジトリにサブモジュールとしてリンクされます。
-- publicにしたくない場合は、[メールアドレス]()にtarballやプライベートリポジトリを送信するなどでも対応可能です。
+- publicにしたくない場合は、[メールアドレス](5andw1ch001@proton.me)にtarballやプライベートリポジトリを送信するなどでも対応可能です。
   - その場合は、リポジトリにサブモジュールとしてリンクされません。
 
 ### 条件
