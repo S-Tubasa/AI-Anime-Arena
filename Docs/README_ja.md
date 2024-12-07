@@ -3,7 +3,7 @@
 
 [English](../README.md) | **日本語**
 
-[![Logo](ogp.png)](https://evaluate.sh)
+https://github.com/user-attachments/assets/318d79c2-3438-440f-aeb0-7ac8d2ec2f95
 
 <a href="https://evaluate.sh" rel="dofollow"><strong>Explore the Web »</strong></a>
 </div>
