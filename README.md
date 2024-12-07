@@ -24,7 +24,7 @@ AI-Anime-Arena is an anime art benchmark platform featuring anonymous and random
 ## Request to Add Workflows
 - Please create a repository that meets the following requirements and submit a request via [issues](https://github.com/S-Tubasa/AI-Anime-Arena/issues).
   - After verification, it will be automatically linked as a submodule to this repository.
-- If you do not wish to make it public, you can also send a tarball or private repository to [email address]().
+- If you do not wish to make it public, you can also send a tarball or private repository to [email](5andw1ch001@proton.me).
   - In that case, it will not be linked as a submodule to the repository.
 
 ### Requirements
