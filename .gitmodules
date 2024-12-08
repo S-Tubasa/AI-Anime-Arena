@@ -7,3 +7,9 @@
 [submodule "Architecture/Animagine_XL_3_1_Basic"]
 	path = Architecture/Animagine_XL_3_1_Basic
 	url = git@github.com:S-Tubasa/Animagine_XL_3_1_Basic.git
+[submodule "Architecture/NoobAI_XL_V_Pred_0.65_Basic"]
+	path = Architecture/NoobAI_XL_V_Pred_0.65_Basic
+	url = https://github.com/S-Tubasa/NoobAI_XL_V_Pred_0.65_Basic.git
+[submodule "Architecture/Illustrious_XL_Basic"]
+	path = Architecture/Illustrious_XL_Basic
+	url = https://github.com/S-Tubasa/Illustrious_XL_Basic.git

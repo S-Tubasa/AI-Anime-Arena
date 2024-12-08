@@ -11,10 +11,16 @@
         "base_model": "Counterfeit-V3.0(SD 1.5)",
         "registr": "2024-11-30"
     },
-    "Pony_Diffusion_V6_XL_Basic": {
-        "url": "https://github.com/S-Tubasa/Pony_Diffusion_V6_XL_Basic",
+    "NoobAI_XL_V_Pred_0.65_Basic": {
+        "url": "https://github.com/S-Tubasa/NoobAI_XL_V_Pred_0.65_Basic",
         "contribute": "S-Tubasa",
-        "base_model": "Pony_Diffusion_v6(SD XL)",
-        "registr": "2024-11-30"
+        "base_model": "NoobAI-XL V-Pred 0.65(SD XL)",
+        "registr": "2024-12-08"
+    },
+    "Illustrious_XL_Basic": {
+        "url": "https://github.com/S-Tubasa/Illustrious_XL_Basic",
+        "contribute": "S-Tubasa",
+        "base_model": "Illustrious-XL(SD XL)",
+        "registr": "2024-12-08"
     }
 }
