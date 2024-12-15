@@ -49,6 +49,17 @@ def run(api, input_json_path, output_json_path, old_json_path):
                 print(f"gRPC call failed: {e.details()}")
                 print(f"Status code: {e.code()}")
 
+        if api == "MergeData":
+            request = scoresync_pb2.MergeDataRequest(
+                input_json_path=input_json_path, all_json_path=output_json_path
+            )
+
+            try:
+                response = stub.MergeData(request)
+            except grpc.RpcError as e:
+                print(f"gRPC call failed: {e.details()}")
+                print(f"Status code: {e.code()}")
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Process JSON paths for gRPC request.")

@@ -34,6 +34,11 @@ class ScoreSyncServiceStub(object):
         Args:
             channel: A grpc.Channel.
         """
+        self.MergeData = channel.unary_unary(
+                '/scoresync.ScoreSyncService/MergeData',
+                request_serializer=api_dot_scoresync__pb2.MergeDataRequest.SerializeToString,
+                response_deserializer=api_dot_scoresync__pb2.MergeDataResponse.FromString,
+                _registered_method=True)
         self.MakeRank = channel.unary_unary(
                 '/scoresync.ScoreSyncService/MakeRank',
                 request_serializer=api_dot_scoresync__pb2.MakeRankRequest.SerializeToString,
@@ -53,6 +58,12 @@ class ScoreSyncServiceStub(object):
 
 class ScoreSyncServiceServicer(object):
     """Missing associated documentation comment in .proto file."""
+
+    def MergeData(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
 
     def MakeRank(self, request, context):
         """Missing associated documentation comment in .proto file."""
@@ -75,6 +86,11 @@ class ScoreSyncServiceServicer(object):
 
 def add_ScoreSyncServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
+            'MergeData': grpc.unary_unary_rpc_method_handler(
+                    servicer.MergeData,
+                    request_deserializer=api_dot_scoresync__pb2.MergeDataRequest.FromString,
+                    response_serializer=api_dot_scoresync__pb2.MergeDataResponse.SerializeToString,
+            ),
             'MakeRank': grpc.unary_unary_rpc_method_handler(
                     servicer.MakeRank,
                     request_deserializer=api_dot_scoresync__pb2.MakeRankRequest.FromString,
@@ -100,6 +116,33 @@ def add_ScoreSyncServiceServicer_to_server(servicer, server):
  # This class is part of an EXPERIMENTAL API.
 class ScoreSyncService(object):
     """Missing associated documentation comment in .proto file."""
+
+    @staticmethod
+    def MergeData(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(
+            request,
+            target,
+            '/scoresync.ScoreSyncService/MergeData',
+            api_dot_scoresync__pb2.MergeDataRequest.SerializeToString,
+            api_dot_scoresync__pb2.MergeDataResponse.FromString,
+            options,
+            channel_credentials,
+            insecure,
+            call_credentials,
+            compression,
+            wait_for_ready,
+            timeout,
+            metadata,
+            _registered_method=True)
 
     @staticmethod
     def MakeRank(request,

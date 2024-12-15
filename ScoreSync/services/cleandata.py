@@ -7,7 +7,7 @@ from .deduplication import deduplicate
 
 def CleanData(self, request, context):
 
-    with open(request.input_json_path) as f:
+    with open(request.input_json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
     df = pd.json_normalize(data)
 

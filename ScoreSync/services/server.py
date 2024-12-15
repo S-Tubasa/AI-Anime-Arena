@@ -4,6 +4,7 @@ from api import scoresync_pb2_grpc
 from .makerank import MakeRank
 from .cleandata import CleanData
 from .add_details import AddDetails
+from .mergedata import MergeData
 
 
 class ScoreSync(scoresync_pb2_grpc.ScoreSyncServiceServicer):
@@ -14,6 +15,7 @@ class ScoreSync(scoresync_pb2_grpc.ScoreSyncServiceServicer):
 ScoreSync.MakeRank = MakeRank
 ScoreSync.CleanData = CleanData
 ScoreSync.AddDetails = AddDetails
+ScoreSync.MergeData = MergeData
 
 
 class LoggingInterceptor(grpc.ServerInterceptor):

@@ -2,6 +2,13 @@ syntax = "proto3";
 
 package scoresync;
 
+message MergeDataRequest { 
+    string input_json_path = 1;
+    string all_json_path = 2;
+}
+
+message MergeDataResponse {}
+
 message MakeRankRequest { 
     string input_json_path = 1;
     string output_json_path = 2;
@@ -23,7 +30,8 @@ message AddDetailsRequest {
 message AddDetailsResponse {}
 
 service ScoreSyncService {
-    rpc MakeRank(MakeRankRequest) returns (MakeRankResponse);
-    rpc CleanData(CleanDataRequest) returns (CleanDataResponse);
-    rpc AddDetails(AddDetailsRequest) returns (AddDetailsResponse);
+  rpc MergeData(MergeDataRequest) returns (MergeDataResponse);
+  rpc MakeRank(MakeRankRequest) returns (MakeRankResponse);
+  rpc CleanData(CleanDataRequest) returns (CleanDataResponse);
+  rpc AddDetails(AddDetailsRequest) returns (AddDetailsResponse);
 }

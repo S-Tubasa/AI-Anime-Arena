@@ -11,6 +11,34 @@ import typing
 DESCRIPTOR: google.protobuf.descriptor.FileDescriptor
 
 @typing.final
+class MergeDataRequest(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    INPUT_JSON_PATH_FIELD_NUMBER: builtins.int
+    ALL_JSON_PATH_FIELD_NUMBER: builtins.int
+    input_json_path: builtins.str
+    all_json_path: builtins.str
+    def __init__(
+        self,
+        *,
+        input_json_path: builtins.str = ...,
+        all_json_path: builtins.str = ...,
+    ) -> None: ...
+    def ClearField(self, field_name: typing.Literal["all_json_path", b"all_json_path", "input_json_path", b"input_json_path"]) -> None: ...
+
+global___MergeDataRequest = MergeDataRequest
+
+@typing.final
+class MergeDataResponse(google.protobuf.message.Message):
+    DESCRIPTOR: google.protobuf.descriptor.Descriptor
+
+    def __init__(
+        self,
+    ) -> None: ...
+
+global___MergeDataResponse = MergeDataResponse
+
+@typing.final
 class MakeRankRequest(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor
 

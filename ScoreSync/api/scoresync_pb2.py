@@ -24,25 +24,29 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x13\x61pi/scoresync.proto\x12\tscoresync\"D\n\x0fMakeRankRequest\x12\x17\n\x0finput_json_path\x18\x01 \x01(\t\x12\x18\n\x10output_json_path\x18\x02 \x01(\t\"\x12\n\x10MakeRankResponse\"E\n\x10\x43leanDataRequest\x12\x17\n\x0finput_json_path\x18\x01 \x01(\t\x12\x18\n\x10output_json_path\x18\x02 \x01(\t\"\x13\n\x11\x43leanDataResponse\"]\n\x11\x41\x64\x64\x44\x65tailsRequest\x12\x17\n\x0finput_json_path\x18\x01 \x01(\t\x12\x18\n\x10output_json_path\x18\x02 \x01(\t\x12\x15\n\rold_json_path\x18\x03 \x01(\t\"\x14\n\x12\x41\x64\x64\x44\x65tailsResponse2\xea\x01\n\x10ScoreSyncService\x12\x43\n\x08MakeRank\x12\x1a.scoresync.MakeRankRequest\x1a\x1b.scoresync.MakeRankResponse\x12\x46\n\tCleanData\x12\x1b.scoresync.CleanDataRequest\x1a\x1c.scoresync.CleanDataResponse\x12I\n\nAddDetails\x12\x1c.scoresync.AddDetailsRequest\x1a\x1d.scoresync.AddDetailsResponseb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x13\x61pi/scoresync.proto\x12\tscoresync\"B\n\x10MergeDataRequest\x12\x17\n\x0finput_json_path\x18\x01 \x01(\t\x12\x15\n\rall_json_path\x18\x02 \x01(\t\"\x13\n\x11MergeDataResponse\"D\n\x0fMakeRankRequest\x12\x17\n\x0finput_json_path\x18\x01 \x01(\t\x12\x18\n\x10output_json_path\x18\x02 \x01(\t\"\x12\n\x10MakeRankResponse\"E\n\x10\x43leanDataRequest\x12\x17\n\x0finput_json_path\x18\x01 \x01(\t\x12\x18\n\x10output_json_path\x18\x02 \x01(\t\"\x13\n\x11\x43leanDataResponse\"]\n\x11\x41\x64\x64\x44\x65tailsRequest\x12\x17\n\x0finput_json_path\x18\x01 \x01(\t\x12\x18\n\x10output_json_path\x18\x02 \x01(\t\x12\x15\n\rold_json_path\x18\x03 \x01(\t\"\x14\n\x12\x41\x64\x64\x44\x65tailsResponse2\xb2\x02\n\x10ScoreSyncService\x12\x46\n\tMergeData\x12\x1b.scoresync.MergeDataRequest\x1a\x1c.scoresync.MergeDataResponse\x12\x43\n\x08MakeRank\x12\x1a.scoresync.MakeRankRequest\x1a\x1b.scoresync.MakeRankResponse\x12\x46\n\tCleanData\x12\x1b.scoresync.CleanDataRequest\x1a\x1c.scoresync.CleanDataResponse\x12I\n\nAddDetails\x12\x1c.scoresync.AddDetailsRequest\x1a\x1d.scoresync.AddDetailsResponseb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'api.scoresync_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
-  _globals['_MAKERANKREQUEST']._serialized_start=34
-  _globals['_MAKERANKREQUEST']._serialized_end=102
-  _globals['_MAKERANKRESPONSE']._serialized_start=104
-  _globals['_MAKERANKRESPONSE']._serialized_end=122
-  _globals['_CLEANDATAREQUEST']._serialized_start=124
-  _globals['_CLEANDATAREQUEST']._serialized_end=193
-  _globals['_CLEANDATARESPONSE']._serialized_start=195
-  _globals['_CLEANDATARESPONSE']._serialized_end=214
-  _globals['_ADDDETAILSREQUEST']._serialized_start=216
-  _globals['_ADDDETAILSREQUEST']._serialized_end=309
-  _globals['_ADDDETAILSRESPONSE']._serialized_start=311
-  _globals['_ADDDETAILSRESPONSE']._serialized_end=331
-  _globals['_SCORESYNCSERVICE']._serialized_start=334
-  _globals['_SCORESYNCSERVICE']._serialized_end=568
+  _globals['_MERGEDATAREQUEST']._serialized_start=34
+  _globals['_MERGEDATAREQUEST']._serialized_end=100
+  _globals['_MERGEDATARESPONSE']._serialized_start=102
+  _globals['_MERGEDATARESPONSE']._serialized_end=121
+  _globals['_MAKERANKREQUEST']._serialized_start=123
+  _globals['_MAKERANKREQUEST']._serialized_end=191
+  _globals['_MAKERANKRESPONSE']._serialized_start=193
+  _globals['_MAKERANKRESPONSE']._serialized_end=211
+  _globals['_CLEANDATAREQUEST']._serialized_start=213
+  _globals['_CLEANDATAREQUEST']._serialized_end=282
+  _globals['_CLEANDATARESPONSE']._serialized_start=284
+  _globals['_CLEANDATARESPONSE']._serialized_end=303
+  _globals['_ADDDETAILSREQUEST']._serialized_start=305
+  _globals['_ADDDETAILSREQUEST']._serialized_end=398
+  _globals['_ADDDETAILSRESPONSE']._serialized_start=400
+  _globals['_ADDDETAILSRESPONSE']._serialized_end=420
+  _globals['_SCORESYNCSERVICE']._serialized_start=423
+  _globals['_SCORESYNCSERVICE']._serialized_end=729
 # @@protoc_insertion_point(module_scope)

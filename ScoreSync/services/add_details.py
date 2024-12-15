@@ -27,17 +27,17 @@ def compare_leaderboards(old_leaderboard, new_leaderboard):
 
 def AddDetails(self, request, context):
 
-    with open(request.input_json_path) as f:
+    with open(request.input_json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     leaderboard = data["leaderboard"]
 
-    with open(request.old_json_path) as f:
+    with open(request.old_json_path, "r", encoding="utf-8") as f:
         old_data = json.load(f)
 
     old_leaderboard = old_data["leaderboard"]
 
-    with open("models_metadata.json") as f:
+    with open("models_metadata.json", "r", encoding="utf-8") as f:
         model_details = json.load(f)
 
     meta_leaderboard = []
